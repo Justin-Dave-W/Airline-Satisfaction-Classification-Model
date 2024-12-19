@@ -7,6 +7,7 @@
 **Data Source:**
 - https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction/data
 - Shape = 129,880 rows and 24 columns
+- Variable Examples: Flight distance, customer rating from 0 to 5 on wifi and online booking services, age, departure delay in minutes
 
 **Models Tested:**
 - Naive Bayes
