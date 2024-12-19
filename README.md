@@ -1,5 +1,7 @@
-# Predicting Customer Satisfaction in Airline Industry
+#  Predicting Customer Satisfaction in Airline Industry
 
+
+## General Overview
 **Goal:**
 - Create a classification model capable of predicting customer satisfaction in the form of a binary categorical variable (satisfied/not satisfied)
 - Identify prominent factors from the model that affects customer satisfaction classification
@@ -20,6 +22,36 @@
 - Cost Complexity Pruning
 - Wrapper Method Feature Selection
 - Binning Contineous Variables
+
+
+## Table of Contents 
+- [Data](#data)
+- [Exploratory Analysis](#exploratory-analysis)
+- [Data Cleaning and Engineering](#data-cleaning-and-engineering)
+- [Model Benchmarking and Optimization](#model-benchmarking-and-optimization)
+- [Model Interpretation](#model-interpretation)
+- [Final Remarks](#final-remarks)
+
+## Data
+
+## Exploratory Analysis
+
+![image](https://github.com/user-attachments/assets/cbe9e89a-c86b-4b2e-863a-59d70a2f65b2)
+
+
+## Data Cleaning and Engineering
+
+## Model Benchmarking and Optimization
+
+
+## Model Interpretation
+
+
+## Final Remarks
+
+
+
+
 
 
 
