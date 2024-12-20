@@ -34,6 +34,11 @@
 
 ## Data
 
+The following table describes the attributes present in the dataset before any data pre pre processing took place:
+
+![image](https://github.com/user-attachments/assets/6577ddc0-0bab-467c-8755-716d753598c8)
+
+
 ## Exploratory Analysis
 
 ![image](https://github.com/user-attachments/assets/cbe9e89a-c86b-4b2e-863a-59d70a2f65b2)
