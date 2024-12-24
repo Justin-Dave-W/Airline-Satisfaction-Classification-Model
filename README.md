@@ -27,7 +27,6 @@
 ## Table of Contents 
 - [Data](#data)
 - [Exploratory Analysis](#exploratory-analysis)
-- [Data Cleaning and Engineering](#data-cleaning-and-engineering)
 - [Model Benchmarking and Optimization](#model-benchmarking-and-optimization)
 - [Model Interpretation](#model-interpretation)
 - [Final Remarks](#final-remarks)
@@ -41,13 +40,33 @@ The following table describes the attributes present in the dataset before any d
 
 ## Exploratory Analysis
 
+### Distribution of Numerical Variables
+![image](https://github.com/user-attachments/assets/86a391d8-74c5-4bef-b2b7-95e1cafff50e)
+
+![image](https://github.com/user-attachments/assets/70aa39fb-c7a8-4bf7-8b85-32a187b5e706)
+
+From the histograms above, we observe distinct patterns in the distribution of passenger ratings and flight-related attributes. Age is approximately symmetric, with most passengers in the 20–50 range. Flight distance is highly skewed to the right, which indicates most passengers travel short distances, with few taking long flights. Service-related features like inflight WiFi, food and drink, and online boarding show slight right skews, which indicate moderate to high satisfaction. On the other hand, ratings for onboard service, inflight entertainment, and baggage handling are slightly skewed to the left, which reflects generally high satisfaction in these areas. Gate location and seat comfort exhibit relatively uniform distributions. Departure and arrival delays are highly skewed to the right with the majority of passengers experiencing minimal delays. These patterns reveal a positive trend in passenger satisfaction for most service attributes while highlighting challenges with delays and flight distance distribution.
+
+### Correlation Heatmap
 ![image](https://github.com/user-attachments/assets/cbe9e89a-c86b-4b2e-863a-59d70a2f65b2)
 
-
-## Data Cleaning and Engineering
+One of the strongest positive correlations is observed between Departure Delay in minutes and Arrival in Minutes (0.97). This indicates that departure delays directly influence arrival delays. This also emphasizes the need for airlines to address departure punctuality to improve overall timeliness and customer satisfaction. To avoid multicollinearity issues, we decided to drop variables that have any correlation above 0.8 or below -0.8 thresholds, which includes arrival and departure delay in minutes. Both have similar low correlations to other variables, so we randomly chose arrival delay in minutes to be dropped.
 
 ## Model Benchmarking and Optimization
+### Naive Bayes
+#### Benchmark Model
+As a benchmark model, we used sklearn’s Gaussian Classifier to create a Naive Bayes model. Besides removing the 393 missing rows of data (as stated in the data cleaning section), we implemented this program without processing any of the data. The following is our benchmark Naive Bayes classifier model: 
 
+![image](https://github.com/user-attachments/assets/867f2380-7b7f-46bd-8b6d-c8e56f0e86c2)
+
+The benchmark model has a training set accuracy of 60.09% which shows no signs of overfitting. However, the overall model accuracy is only 60.06% which is a very weak machine learning model. Multiple data processing steps can be used to improve on this benchmark. 
+
+
+
+### Decision Tree
+
+
+### Random Forest
 
 ## Model Interpretation
 
